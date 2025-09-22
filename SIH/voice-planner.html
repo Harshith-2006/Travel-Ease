@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant - Travel Ease</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Travel Ease</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="discover.html"><i class="fas fa-search-location"></i> Discover</a></li>
+                <li><a href="ai-planner.html"><i class="fas fa-magic"></i> AI Planner</a></li>
+                <li><a href="group-travel.html"><i class="fas fa-users"></i> Group Travel</a></li>
+                <li><a href="voice-planner.html" class="active"><i class="fas fa-microphone-alt"></i> Voice Assistant</a></li>
+            </ul>
+            <div id="auth-links-nav" class="auth-links-nav">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn btn-primary btn-signup">Sign Up</a>
+            </div>
+            <div id="profile-section-nav" class="profile-section-nav hidden">
+                <img src="https://source.unsplash.com/40x40/?portrait" alt="Profile" class="profile-pic">
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Voice Trip Planning</h1>
+            <p>Plan your perfect Indian adventure using just your voice.</p>
+        </section>
+
+        <div class="voice-planner-container">
+            <div class="voice-assistant-panel">
+                <h3><i class="fas fa-microphone-alt"></i> Voice Assistant</h3>
+                <div class="mic-container" id="mic-container">
+                    <div class="mic-icon"><i class="fas fa-microphone"></i></div>
+                </div>
+                <p class="mic-status" id="mic-status">Click the mic to start</p>
+            </div>
+            <div class="conversation-panel">
+                <h3><i class="fas fa-comments"></i> Sample Conversation</h3>
+                <div class="chat-box">
+                    <div class="chat-message user"><div class="chat-bubble">Find handloom centers near Varanasi.</div></div>
+                    <div class="chat-message ai"><div class="chat-bubble">Varanasi is famous for its Banarasi Silk Weavers. You can visit their co-operatives to see the making of authentic Banarasi sarees.</div></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

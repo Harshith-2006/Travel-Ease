@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Travel - Travel Ease</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Travel Ease</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="discover.html"><i class="fas fa-search-location"></i> Discover</a></li>
+                <li><a href="ai-planner.html"><i class="fas fa-magic"></i> AI Planner</a></li>
+                <li><a href="group-travel.html" class="active"><i class="fas fa-users"></i> Group Travel</a></li>
+                <li><a href="voice-planner.html"><i class="fas fa-microphone-alt"></i> Voice Assistant</a></li>
+            </ul>
+            <div id="auth-links-nav" class="auth-links-nav">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn btn-primary btn-signup">Sign Up</a>
+            </div>
+            <div id="profile-section-nav" class="profile-section-nav hidden">
+                <img src="https://source.unsplash.com/40x40/?portrait" alt="Profile" class="profile-pic">
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Group Travel</h1>
+            <p>Plan together, vote on activities, and split expenses with your travel companions.</p>
+        </section>
+        
+        <div class="group-travel-container">
+            <div class="results-tabs">
+                <button class="results-tab-btn active" data-target="my-groups"><i class="fas fa-user-friends"></i> My Groups</button>
+                <button class="results-tab-btn" data-target="create-group"><i class="fas fa-plus-circle"></i> Create Group</button>
+                <button class="results-tab-btn" data-target="join-group"><i class="fas fa-sign-in-alt"></i> Join Group</button>
+            </div>
+
+            <div class="group-content">
+                <div id="my-groups" class="group-tab active">
+                    <div class="group-details-header">
+                        <h3>Rajasthan Royal Adventure</h3>
+                        <div class="group-code-display">Code: RAJ2025</div>
+                    </div>
+                    <div class="group-dashboard">
+                        <div class="vote-panel">
+                            <h4><i class="fas fa-vote-yea"></i> Vote on Activities</h4>
+                            <div class="activity-item"><span>Jaipur City Palace Visit <small>(3 votes)</small></span><button class="btn-vote">Vote</button></div>
+                            <div class="activity-item"><span>Camel Safari in Jaisalmer <small>(4 votes)</small></span><button class="btn-vote voted">Voted</button></div>
+                        </div>
+                        <div class="expense-panel">
+                            <h4><i class="fas fa-wallet"></i> Expense Splitting</h4>

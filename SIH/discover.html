@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover India - Travel Ease</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Travel Ease</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="discover.html" class="active"><i class="fas fa-search-location"></i> Discover</a></li>
+                <li><a href="ai-planner.html"><i class="fas fa-magic"></i> AI Planner</a></li>
+                <li><a href="group-travel.html"><i class="fas fa-users"></i> Group Travel</a></li>
+                <li><a href="voice-planner.html"><i class="fas fa-microphone-alt"></i> Voice Assistant</a></li>
+            </ul>
+            <div id="auth-links-nav" class="auth-links-nav">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn btn-primary btn-signup">Sign Up</a>
+            </div>
+            <div id="profile-section-nav" class="profile-section-nav hidden">
+                <img src="https://source.unsplash.com/40x40/?portrait" alt="Profile" class="profile-pic">
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Discover Local India</h1>
+            <p>Enter a city to find hidden gems, popular attractions, handlooms, and events.</p>
+        </section>
+
+        <section class="search-form-section">
+            <form id="discover-search-form">
+                <div class="form-group">
+                    <label for="location">Enter a location in India</label>
+                    <input type="text" id="location" placeholder="e.g., Varanasi or Rajasthan">
+                </div>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+            </form>
+        </section>
+
+        <section id="results-section" class="hidden">
+            <h2 id="results-title"></h2>
+            <div class="results-tabs">
+                 <button class="results-tab-btn active" data-target="places-results"><i class="fas fa-monument"></i> Places to Visit</button>
+                 <button class="results-tab-btn" data-target="gems-results"><i class="fas fa-gem"></i> Hidden Gems</button>
+                 <button class="results-tab-btn" data-target="handilooms-results"><i class="fas fa-scroll"></i> Handlooms</button>
+                 <button class="results-tab-btn" data-target="events-results"><i class="fas fa-calendar-star"></i> Events</button>
+            </div>
+            <div id="places-results" class="results-grid results-tab-content active"></div>
+            <div id="gems-results" class="results-grid results-tab-content"></div>
+            <div id="handilooms-results" class="results-grid results-tab-content"></div>
+            <div id="events-results" class="results-grid results-tab-content"></div>
+        </section>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
